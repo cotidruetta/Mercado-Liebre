@@ -1,0 +1,75 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*HEADER*/
+
+header{
+    background-color:#EAC926;
+    background-size: cover;
+    margin: -8px;
+}
+.logo{
+    height: 220px;
+    width: 350px;
+}
+.textoManito{
+    text-align: center;
+}
+.cuerpoHeader{
+    font-size: 12px;
+}
+ul{
+    list-style-type:none;
+}
+.menuHeaderPadre{
+    display: flex;
+    justify-content: center;
+}
+
+/*MAIN*/
+
+main{
+    background-color: white;
+}
+.productosPadre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titularesMain{
+    font-size: 24px;
+}
+.ftProductos{
+    height: 220px;
+    width: 220px;
+}
+.precios{
+        font-size: 18px;
+}
+.nombreProducto{
+    font-size: 16;
+}
+.descuentos{
+    font-size: 16px;
+    color: #39b54a;
+}
+.nombreProducto2{
+    font-size: 16;
+}
+
+/*FOOTER*/
+
+footer{
+    text-align: center;
+    background-color:#ebebeb ;
+    margin: -12px 
+}
+.titularFooter{
+    font-size: 18px;
+    color: #666
+}
+.cuerpoFooter{
+    font-size: 16px;
+    color: #666
+}
