@@ -6,8 +6,8 @@ body{
 
 header{
     background-color:#EAC926;
-    background-size: cover;
-    margin: -8px;
+    margin: 0px;
+    padding: 0px;
 }
 .logo{
     height: 220px;
