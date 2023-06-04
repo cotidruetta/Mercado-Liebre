@@ -1,6 +1,11 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /*HEADER*/
 
@@ -26,11 +31,16 @@ ul{
     display: flex;
     justify-content: center;
 }
+.imgBanner{
+    width: 385px;
+    height: 80px;
+}
 
 /*MAIN*/
 
 main{
     background-color: #ebebeb;
+    
 }
 .productosPadre{
     display: flex;
@@ -40,6 +50,7 @@ main{
 .cajitaInfoProducto{
     border-top: solid 1px #ebebeb;
     background-color: white;
+    padding: 15px;
 }
 .titularesMain{
     font-size: 24px;
@@ -67,7 +78,8 @@ main{
 footer{
     text-align: center;
     background-color: white ;
-    margin: -12px 
+    padding-left: 8px;
+    padding-right: 8px
 }
 .titularFooter{
     font-size: 18px;
