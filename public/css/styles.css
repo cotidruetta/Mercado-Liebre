@@ -11,8 +11,6 @@ body{
 
 header{
     background-color:#EAC926;
-    margin: 0px;
-    padding: 0px;
 }
 .logo{
     height: 220px;
@@ -31,8 +29,12 @@ ul{
     display: flex;
     justify-content: center;
 }
+.fa-bars{
+    background-color: #1259c3;
+    padding: 5px;
+}
 .imgBanner{
-    width: 385px;
+    width: 400px;
     height: 80px;
 }
 
@@ -40,7 +42,6 @@ ul{
 
 main{
     background-color: #ebebeb;
-    
 }
 .productosPadre{
     display: flex;
