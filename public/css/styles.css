@@ -25,7 +25,7 @@ header{
 .titulitosHeader{
     display: none;
 }
-.cuerpoHeader{
+.textoManito-icono{
     font-size: 12px;
 }
 ul{
@@ -41,6 +41,7 @@ ul{
     border-radius: 5px;
 }
 .hamburguerMenu{
+    display: contents;
     width: 25px;
     height: 25px;
 }
@@ -107,21 +108,54 @@ footer{
 
 /*----------------------------------------------------------*/
 
-@media only screen and (max-width: 1279px) and (min-width:769px) {
+@media only screen and (max-width: 2000px) and (min-width:769px) {
     header{
         background-color:#EAC926;
-        padding: 15px;
-        padding-right: 15px;
-        height: 200px;
+        padding: 10px 60px;
+        height: 120px;
+        font-weight: bold;
     }
-
-
-
-
-
-
-
+    .logo{
+        height: 70px;
+        width: 160px;
+    }
+    .div-header-top{
+        display: flex;
+        justify-content: space-evenly;
+    } 
+    .search-button-lupa{
+        display: flex;
+        align-self: center;
+        background-color: white;
+        padding: 10px 60px 10px 15px;
+    }
+    .textoManito-icono{
+        display: flex;
+        align-self: center;
+        font-size: 15px;
+    }
     .titulitosHeader{
         display: contents;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        bottom: 30px;
+        font-size: 14px;
+    }
+    .titulitosHeader1{
+        display: flex;
+        justify-content: space-between;
+        width: 400px;
+    }
+    .titulitosHeader2{
+        display: flex;
+        justify-content: space-between;
+        width: 400px;
+    }
+    .hamburguerMenu{
+        display: none;
+    }
+    .imgBanner{
+        background-image: url("../public/imagenes/img-home-banner.jpg");
     }
 }
