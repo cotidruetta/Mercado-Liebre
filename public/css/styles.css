@@ -11,46 +11,63 @@ body{
 
 header{
     background-color:#EAC926;
-    padding: 15px;
-    padding-right: 15px
-
+    background-size: cover;
+    height: 180px;
+    padding: 10px;
+}
+.div-header-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .logo{
     height: 80px;
     width: 160px;
 }
 .textoManito{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.search-button-lupa{
+    align-self: center;
+    overflow: hidden;
+    background-color: white;
+    height: 25px;
+}
+.search-button{
+    overflow: hidden;
+    height: 25px;
+}
+.lupita{
+    padding: 2px;
+    border-left: solid 1px #ebebeb;
+    height: 15px;
+    width: 20;
 }
 .titulitosHeader{
     display: none;
 }
-.textoManito-icono{
-    font-size: 12px;
-}
 ul{
     list-style-type:none;
 }
-.menuHeaderPadre{
+.hamburguerMenuPadre{
+    display: contents;
     display: flex;
     justify-content: center;
+    position: relative;
+    bottom: 10px
 }
 .fa-bars{
-    background-color: #1259c3;
-    padding: 5px;
+    background-color: #03264C;
+    padding: 7px 15px;
     border-radius: 5px;
-}
-.hamburguerMenu{
-    display: contents;
-    width: 25px;
-    height: 25px;
 }
 
 /*MAIN*/
 
 .imgBanner{
     width: 400px;
-    height: 80px;
+    height: 85px;
 }
 main{
     background-color: #ebebeb;
@@ -108,7 +125,7 @@ footer{
 
 /*----------------------------------------------------------*/
 
-@media only screen and (max-width: 2000px) and (min-width:769px) {
+@media only screen and (max-width: 2000px) and (min-width:1285px) {
     header{
         background-color:#EAC926;
         padding: 10px 60px;
@@ -126,18 +143,25 @@ footer{
     .search-button-lupa{
         display: flex;
         align-self: center;
+        overflow: hidden;
         background-color: white;
-        padding: 10px 60px 10px 15px;
+        height: 25px;
+        width: 250px;
     }
-    .textoManito-icono{
-        display: flex;
+    .search-button{
+        border: none;
+        height: 25px;
+        width: 220px;
+        border-right: solid 2px #ebebeb;
+    }
+    .textoManito{
         align-self: center;
         font-size: 15px;
     }
     .titulitosHeader{
         display: contents;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         position: relative;
         bottom: 30px;
         font-size: 14px;
@@ -152,10 +176,33 @@ footer{
         justify-content: space-between;
         width: 400px;
     }
-    .hamburguerMenu{
+    .hamburguerMenuPadre{
         display: none;
     }
-    .imgBanner{
-        background-image: url("../public/imagenes/img-home-banner.jpg");
+
+    /*---------MAIN-----------*/
+
+
+    .titularesMain{
+        position: absolute;
     }
+    .titulo-ultima-vista{
+        bottom: 250px;
+    }
+    .titulo-ofertas{
+        bottom: 10px;
+    }
+    .ultima-vista{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .Ofertas{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+   
+
+    
 }
