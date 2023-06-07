@@ -37,6 +37,7 @@ header{
 }
 .search-button{
     overflow: hidden;
+    border: none;
     border-left: solid 1px #ebebeb;
     height: 25px;
 }
@@ -128,7 +129,7 @@ footer{
 
 /*----------------------------------------------------------*/
 
-@media only screen and (max-width: 2000px) and (min-width:1285px) {
+@media only screen and (max-width: 2000px) and (min-width:1000px) {
 
     /*-------------HEADER-----------------*/
 
@@ -193,32 +194,58 @@ footer{
 
     /*---------MAIN-----------*/
     
-   .imgBanner{
-    width: 100%;
-    height: 300px;
-   }
-    .productosPadre{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        height: 400px;
+    .imgBanner{
+        width: 100%;
+        height: 300px;
+    }
+   .productosPadre{
+        display: block;
     }
     .titularesMain{
         position: absolute;
         align-self: flex-start;
+        padding-left: 17.5vw;
     }
-    .titulo-ofertas{
-        margin-left: 100px;
+    .basado-ultima-vista{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+        height: 400px;
+        align-items: flex-end;
     }
-    .titulo-ultima-vista{
-        left: 20px
+    .ofertas{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+        height: 400px;
+        align-items: flex-end;
     }
-    .productoEntero{
+    .precios-descuentos{
+        display: flex;
+        font-weight: bold;
+    }
+    .descuentos{
+        margin-left: 15px;
+        font-size: 14px;
+        align-self: center;
+    }
+    .camioncito{
+        position: relative;
+        left: 170px;
+    }
+    .camioncito:hover{
+        transform: rotate(270deg);
         align-self: flex-end;
-        
+
+    }
+    .nombreProducto{
+        opacity: 0;
+    }
+    .nombreProducto:hover{
+       opacity: 1.5;
     }
     .productoEntero:hover{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
     /*---------FOOTER-----------*/
@@ -237,5 +264,118 @@ footer{
         font-size: 15px;
         color: #666
     }
+}
 
+@media only screen and (max-width:1001px) and (min-width:481px) {
+
+        /*-------------HEADER-----------------*/
+
+        header{
+            background-color:#EAC926;
+            padding: 10px 60px;
+            height: 150px;
+            font-weight: bold;
+        }
+        .logo{
+            height: 65px;
+            width: 130px;
+        }
+        .div-header-top{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        } 
+        .search-button-lupa{
+            display: flex;
+            justify-content: space-evenly;
+            align-self: center;
+            background-color: white;
+            height: 30px;
+            
+        }
+        .search-button{
+            border: none;
+            height: 30px;
+            border-right: solid 2px #ebebeb;
+        }
+        .lupita{
+            align-self: center;
+            padding-right: 3px
+        }
+        .textoManito{
+            align-self: center;
+            font-size: 15px;
+            justify-content: end;
+        }
+        .titulitosHeader{
+            display: contents;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            bottom: 30px;
+            font-size: 14px;
+        }
+        .titulitosHeader1{
+            display: flex;
+            justify-content: space-evenly;
+            width: 400px;
+        }
+        .titulitosHeader2{
+            display: flex;
+            justify-content: space-evenly;
+            width: 400px;
+        }
+        .hamburguerMenuPadre{
+            display: none;
+        }
+    
+        /*---------MAIN-----------*/
+        
+        .imgBanner{
+            width: 100%;
+            height: 27vw;
+        }
+       .productosPadre{
+            display: block;
+        }
+        .titularesMain{
+            position: absolute;
+            align-self: flex-start;
+            padding-left: 12vw;
+        }
+        .basado-ultima-vista{
+            display: flex;
+            flex-flow: row;
+            justify-content: space-evenly;
+            height: 400px;
+            align-items: flex-end;
+        }
+        .ofertas{
+            display: flex;
+            flex-flow: row;
+            justify-content: space-evenly;
+            height: 400px;
+            align-items: flex-end;
+        }
+        .productoEntero:hover{
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);;
+        }
+    
+    
+        /*---------FOOTER-----------*/
+    
+        .divFooter{
+            display: flex;
+            flex-flow: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .titularFooter{
+            font-size: 18px;
+            color: #666
+        }
+        .cuerpoFooter{
+            font-size: 15px;
+            color: #666
+        }
 }
