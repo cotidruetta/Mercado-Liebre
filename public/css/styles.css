@@ -379,3 +379,50 @@ footer{
             color: #666
         }
 }
+
+/*-------------------------------------------------------------------*/
+/*----------register form--------------------*/
+
+.form-register-padre{
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+    border: solid;
+    background-color: #ebebeb;
+    padding: 10px 15px;
+}
+.todosLosInput{
+    height: 30px;
+    width: 264px;
+    border: none;
+    border-radius: 7px;
+    padding: 5px;
+}
+.botones-reset-enviar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.vendedor-comprador{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.intereses{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*-------login form--------------*/
+.login{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 1000px;
+    justify-content: space-evenly;
+}
+.main-login{
+    display: flex;
+    justify-content: center;
+}
