@@ -39,7 +39,7 @@
     <br>
         <div class="titulitosHeader2">
           <li> <a aria-current="page" href="/register">Creá tu cuenta</a><i class="fa-regular fa-id-card" style="color: #010101;"></i></li>
-          <li>Ingresá <a aria-current="page" href="/login">Ingresá</a> <i class="fa-solid fa-right-to-bracket" style="color: #010101;"></i></li>
+          <li><a aria-current="page" href="/login">Ingresá</a> <i class="fa-solid fa-right-to-bracket" style="color: #010101;"></i></li>
           <li>Mis compras <i class="fa-solid fa-basket-shopping" style="color: #010101;"></i></li>
         </div>
       </ul>
@@ -51,44 +51,44 @@
       <form action="register">
         <div class="form-register-padre">
         
-        <input class="todosLosInput" type="text" id="nombre" name="nombre" placeholder="Nombre y apellido">
+        <input class="todosLosInput" type="text" name="nombre" placeholder="Nombre y apellido" required>
 
-        <input class="todosLosInput" type="text" id="nombreUsuario" name="nombreUsuario" placeholder="Nombre de usuario">
+        <input class="todosLosInput" type="text"  name="nombreUsuario" placeholder="Nombre de usuario" required>
 
-        <input class="todosLosInput" type="email" id="mail" name="mail" placeholder="E-mail">
+        <input class="todosLosInput" type="email"  name="email" placeholder="E-mail" required>
 
         <h4>Fecha de nacimiento</h4>
 
-        <input class="todosLosInput" type="date" id="nacimiento" name="nacimiento">
+        <input class="todosLosInput" type="date" name="fecha" required>
 
-        <input class="todosLosInput" type="text" id="domicilio" name="domicilio" placeholder="Domicilio">
+        <input class="todosLosInput" type="text"  name="domicilio" placeholder="Domicilio" required >
 
         <h4>Perfil de usuario</h4>
 
         <div class="vendedor-comprador">
             <label for="perfilDeUsuario">
                 Vendedor
-                <input type="radio" name="perfilDeUsuario" value="vendedor">
+                <input type="radio" name="perfilDeUsuario" value="vendedor" >
             </label>  
             <label for="perfilDeUsuario">
                 Comprador
-                <input type="radio" name="perfilDeUsuario" value="comprador">
+                <input type="radio" name="perfilDeUsuario" value="comprador" >
             </label>
         </div>
 
             <h4>Intereses</h4>
             <label for="interes">
-                <input type="checkbox" name="interes" value="Electro">
+                <input type="checkbox" name="interes" value="Electro" >
                 Electro
             </label>
     
             <label for="interes">
-                <input type="checkbox" name="interes" value="Moda">
+                <input type="checkbox" name="interes" value="Moda" >
                 Moda
             </label>
 
             <label for="interes">
-                <input type="checkbox" name="interes" value="Hogar">
+                <input type="checkbox" name="interes" value="Hogar" >
                 Hogar
             </label>
 
@@ -98,7 +98,7 @@
             </label>
 
             <label for="interes">
-                <input type="checkbox" name="interes" value="Vida sana">
+                <input type="checkbox" name="interes" value="Vida sana" >
                 Vida sana
             </label>
 
@@ -106,13 +106,13 @@
                 <input class="todosLosInput" type="file" accept=".jpg">
 
    
-            <input class="todosLosInput" type="password" placeholder="Constraseña">
+            <input class="todosLosInput" type="password" placeholder="Constraseña" required>
 
-            <input class="todosLosInput" type="password" placeholder="Confirmar constraseña">
+            <input class="todosLosInput" type="password" placeholder="Confirmar constraseña" required>
  
             <div class="botones-reset-enviar">
                 <button class="boton-reset" type="reset">Reset</button>
-                <button class="boton-enviar-register" type="submit" value="Enviar"><a aria-current="home" href="/home">Enviar</a></button>
+                <button class="boton-enviar-register" type="submit" value="Enviar">Enviar</button>
             </div>
           </div>
       </form>
