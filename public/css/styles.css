@@ -182,11 +182,13 @@ footer{
         display: flex;
         justify-content: space-between;
         width: 400px;
+        text-decoration: none;
     }
     .titulitosHeader2{
         display: flex;
         justify-content: space-between;
         width: 400px;
+        text-decoration: none;
     }
     .hamburguerMenuPadre{
         display: none;
@@ -240,9 +242,11 @@ footer{
     }
     .nombreProducto{
         opacity: 0;
+        height: 1px;
     }
     .nombreProducto:hover{
        opacity: 1.5;
+       height: 19.2px;
     }
     .productoEntero:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -383,17 +387,22 @@ footer{
 /*-------------------------------------------------------------------*/
 /*----------register form--------------------*/
 
+.main-register{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+}
 .form-register-padre{
     display: flex;
-    flex-flow: column;
-    width: 300px;
-    border: solid;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 1000px;
     background-color: #ebebeb;
     padding: 10px 15px;
 }
 .todosLosInput{
     height: 30px;
-    width: 264px;
     border: none;
     border-radius: 7px;
     padding: 5px;
@@ -403,26 +412,58 @@ footer{
     flex-direction: row;
     justify-content: space-around;
 }
+.boton-enviar-register{
+    width: 80px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: #1259c3;
+    color: white;
+    border: none;
+}
+.boton-reset{
+    width: 80px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: #1259c3;
+    color: white;
+    border: none;
+}
 .vendedor-comprador{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-.intereses{
-    display: flex;
-    flex-direction: column;
-}
 
 
 /*-------login form--------------*/
-.login{
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    height: 1000px;
-    justify-content: space-evenly;
-}
+
 .main-login{
     display: flex;
     justify-content: center;
+    width: 100%;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 60vw;
+    justify-content:space-around;
+    padding: 5px;
+}
+.elemento-login{
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    padding: 0 5px;
+}
+.enviar-login{
+    background-color: #1259c3;
+    font-weight: bold;
+    color: white;
+    height: 45px;
+    border: none;
+    border-radius: 7px;
+}
+.anchor-enviar-login{
+    text-decoration: none;
 }

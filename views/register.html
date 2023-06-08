@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mercado Liebre</title>
+    <title>Crea tu cuenta!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,21 +47,22 @@
       <br>
     </header>
     <main>
+    <div class="main-register">
       <form action="register">
         <div class="form-register-padre">
         
         <input class="todosLosInput" type="text" id="nombre" name="nombre" placeholder="Nombre y apellido">
-<br>
+
         <input class="todosLosInput" type="text" id="nombreUsuario" name="nombreUsuario" placeholder="Nombre de usuario">
 
         <h4>Fecha de nacimiento</h4>
-<br>
+
         <input class="todosLosInput" type="date" id="nacimiento" name="nacimiento">
-<br>
+
         <input class="todosLosInput" type="text" id="domicilio" name="domicilio" placeholder="Domicilio">
 
         <h4>Perfil de usuario</h4>
-<br>
+
         <div class="vendedor-comprador">
             <label for="perfilDeUsuario">
                 Vendedor
@@ -72,7 +73,7 @@
                 <input type="radio" name="perfilDeUsuario" value="comprador">
             </label>
         </div>
-        <div class="intereses">
+
             <h4>Intereses</h4>
             <label for="interes">
                 <input type="checkbox" name="interes" value="Electro">
@@ -88,7 +89,7 @@
                 <input type="checkbox" name="interes" value="Hogar">
                 Hogar
             </label>
-        </div>
+
             <label for="interes">
                 <input type="checkbox" name="interes" value="Jugueteria">
                 Jugueteria
@@ -104,15 +105,16 @@
 
    
             <input class="todosLosInput" type="password" placeholder="Constraseña">
-<br>
+
             <input class="todosLosInput" type="password" placeholder="Confirmar constraseña">
  
             <div class="botones-reset-enviar">
-                <button type="reset">Reset</button>
-                <button type="submit" value="Enviar">Enviar</button>
+                <button class="boton-reset" type="reset">Reset</button>
+                <button class="boton-enviar-register" type="submit" value="Enviar"><a class="achor-enviar-register" aria-current="home" href="/home">Enviar</a></button>
             </div>
           </div>
       </form>
+    </div>
     </main>
     <footer>
       <div class="divFooter">
